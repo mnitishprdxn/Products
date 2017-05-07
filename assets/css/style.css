@@ -1,0 +1,421 @@
+@charset 'utf-8';
+/* ==========================================================================
+   1. CSS Reset Code
+   ========================================================================== */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  padding: 0;
+  border: 0;
+  margin: 0;
+  vertical-align: baseline;
+  font: inherit;
+  font-size: 100%;
+  }
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+main {
+  display: block;
+  }
+
+/* Force scrollbar */
+html {
+  overflow-y: scroll;
+  }
+
+/* Align radios and text inputs with their label */
+
+input[type='radio'] {
+  vertical-align: text-bottom;
+  }
+
+/* Hand cursor on clickable input elements */
+label,
+input[type='button'],
+input[type='submit'],
+button {
+  cursor: pointer;
+  }
+
+strong {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: bold;
+  }
+
+em {
+  font-style: italic;
+  }
+
+img {
+  border: 0;
+  vertical-align: middle;
+  }
+
+sub,
+sup {
+  vertical-align: baseline;
+  position: relative;
+  font-size: 55%;
+  line-height: 0;
+  }
+
+sup {
+  top: -.7em;
+  }
+
+sub {
+  bottom: -.25em;
+  }
+
+/* 1.2. Clear Fix
+========================================================================== */
+
+.cf:before,
+.cf:after {
+  display: table;
+  content: ' ';
+  }
+
+.cf:after {
+  clear: both;
+  }
+
+/*********************** Styling start **********************/
+
+body {
+  font-family: sans-serif;
+  }
+
+/*header styling starts*/
+header {
+  color: #938587;
+  font-family: 'Montserrat', sans-serif;
+  }
+
+.social-address-div {
+  padding: 24px 5.9375%;
+  }
+
+.social-address-div span {
+  color: #938587;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13.9px;/* Approximation due to font substitution */
+  font-weight: 400;
+  line-height: 22px;/* Approximation due to font substitution */
+  text-align: left;
+  }
+
+.address-time-div span:nth-child(2):before {
+  padding: .5%;
+  content: '|';
+  }
+
+.address-time-div {
+  width: 52%;
+  float: left;
+  }
+
+.contact-social-links {
+  width: 21%;
+  float: right;
+  }
+
+.contact-social-links ul {
+  padding-left: 2%;
+  float: right;
+  list-style: none;
+  }
+
+.contact-social-links ul li { display: inline-block; }
+
+.banner-div {
+  padding: 9px 0;
+  background: url(../images/banner.png) no-repeat center center;
+  background-size: cover;
+  }
+
+.logo h1 {
+  width: 20.546875%;
+  padding: 41px 0;
+  margin: 0 auto;
+  background: #a04500;
+  font-family: serif;
+  text-align: center;
+  text-transform: uppercase;
+
+  font-color: white;
+  }
+
+.logo h1 a { text-decoration: none; }
+
+.logo h1 p:nth-child(1) {
+  color: white;
+  font-size: 20px;
+  letter-spacing: 6px;
+  }
+
+.logo h1 p:nth-child(2) {
+  color: white;
+  letter-spacing: 3px;
+  }
+
+.slogan {
+  color: white;
+  font-family: serif;
+  font-size: 22px;
+  font-style: italic;
+  text-align: center;
+  }
+
+.main-wrapper {
+  width: 98%;
+  max-width: 1066px;
+  margin: 0 auto;
+  }
+
+ul { list-style: none; }
+
+a { text-decoration: none; }
+
+/*header styling ends*/
+
+/*main styling start*/
+.main-wrapper > nav {
+  border-top: 5px solid brown;
+  border-bottom: 1px solid grey;
+  }
+
+.main-wrapper > nav ul {
+  padding: 2% 0;
+  display: flex;
+  justify-content: space-around;
+  }
+
+.main-wrapper > nav a {
+  color: #4c2500;
+  font-weight: 600;
+  text-transform: uppercase;
+  }
+
+.main-wrapper > nav li:hover a {
+  color: brown;
+  }
+
+.links-for-watches ul {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 50px;
+  }
+
+.links-for-watches a {
+  color: #773a01;
+  font-size: 15px;
+  }
+
+.links-for-watches ul li + li:before {
+  padding-right: 1%;
+  color: #773a01;
+  content: '/';
+  }
+
+.links-for-watches ul li {
+  display: inline-block;
+  }
+
+.links-for-watches ul li:hover a {
+  color: #4c2500;
+  }
+
+.details-of-links {
+  display: flex;
+  }
+
+.watch-img-and-list {
+  width: 50%;
+  }
+
+.main-watch-img {
+  padding: 22px;
+  border-top: 5px solid #d3c6b0;
+  border-bottom: 1px solid grey;
+  text-align: center;
+  }
+
+.watches-img-links {
+  padding: 17px 0;
+  position: relative;
+  }
+
+.watches-img-links > img:nth-child(1) {
+  position: absolute;
+  top: 35%;
+  left: 0;
+  }
+
+.watches-img-links > img:nth-child(2) {
+  position: absolute;
+  top: 35%;
+  right: 0;
+  }
+
+.watches-img-links ul {
+  display: flex;
+  justify-content: space-around;
+  }
+
+.info-div {
+  width: 50%;
+  }
+
+.title {
+  border-bottom: 1px solid grey;
+  }
+
+.title h2 {
+  color: #4b362e;
+  font-family: serif;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 40px;
+  text-align: left;
+  }
+
+.title span:nth-child(2) {
+  color: #4b362e;
+  font-family: serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 40px;
+  text-align: left;
+  }
+
+.title span:nth-child(3) {
+  background: #e3a704;
+  color: white;
+  font-size: 15px;
+  text-transform: uppercase;
+  }
+
+.details-of-watch ul {
+  padding: 24px 0;
+  color: #4b362e;
+  font-family: LibreBaskerville;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 30px;
+  list-style: none;
+  text-align: left;
+  }
+
+.details-of-watch button {
+  padding: 2% 5%;
+  border: 1px solid;
+  border-style: none;
+  background: transparent;
+  color: #4b362e;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  border: 1px solid;
+  }
+
+  .details-of-watch button:hover {
+    background: #4b362e; 
+    color: white;
+  }
+
+
+/*main styling ends*/
